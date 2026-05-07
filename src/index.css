@@ -16,9 +16,16 @@
   cursor: none !important;
 }
 
+/* Hide scrollbar completely while maintaining kinetic scroll */
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
   background: #050505;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 body {
