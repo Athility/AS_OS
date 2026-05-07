@@ -42,19 +42,13 @@ The interface is built around **grid-based glassmorphism** and a curated dark-mo
 
 ## 🛠️ Technology Stack
 
-Every technology and skill mapped on the site is represented inside a perfectly aligned monospace ASCII terminal grid with bespoke custom icons:
-
-```
-┌─────────────────┬─────────────────┬─────────────────┬────────────────────────┐
-│   PROGRAMMING   │    WEB BUILD    │     AI & ML     │       TOOLS / IDE      │
-├─────────────────┼─────────────────┼─────────────────┼────────────────────────┤
-│ • Python (💻)   │ • HTML (Code)   │ • Pandas (📊)   │ • AutoCAD (🧭)         │
-│ • C/C++ (⚙️)    │ • CSS (Layers)  │ • NumPy (🏁)    │ • Blender (📦)         │
-│ • Java (☕)     │ • React (⚛️)    │ • Seaborn (📈)  │ • Canva (🎨)           │
-│                 │ • Node.js (🖥️)  │ • Scikit (🧠)   │ • VS Code (📝)         │
-│                 │ • Tailwind (💨) │ • Jupyter (📖)  │ • Antigravity (🪐)     │
-└─────────────────┴─────────────────┴─────────────────┴────────────────────────┘
-```
+| PROGRAMMING | WEB BUILD | AI & ML | TOOLS / IDE |
+| :--- | :--- | :--- | :--- |
+| • Python (💻) | • HTML (Code) | • Pandas (📊) | • AutoCAD (🧭) |
+| • C/C++ (⚙️) | • CSS (Layers) | • NumPy (🏁) | • Blender (📦) |
+| • Java (☕) | • React (⚛️) | • Seaborn (📈) | • Canva (🎨) |
+| | • Node.js (🖥️) | • Scikit (🧠) | • VS Code (📝) |
+| | • Tailwind (💨) | • Jupyter (📖) | • Antigravity (🪐) |
 
 ---
 
