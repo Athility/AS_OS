@@ -1,0 +1,26 @@
+Atharva Shinde
+FY AI&DS Student at SAKEC
+
+Profile
+Driven by a profound passion for new technologies and continuous innovation.
+
+Programming
+Python, C / C++, Java
+
+Web Development
+HTML, CSS, JavaScript, React, Node.js, Express.js, MongoDB, Tailwind CSS
+
+AI & Machine Learning
+Pandas, NumPy, Seaborn, Scikit-learn, Jupyter
+
+Tools
+AutoCAD, Blender, Canva, Davinci
+
+IDE
+VS Code, Antigravity
+
+Projects
+ai-law-aid, spice_site, sports-moments-ai, cinematiq-ai-shot-list, indoor-lighting-sim, student-resource-hub
+
+Contact
+KRASHITOS96420@GMAIL.COM

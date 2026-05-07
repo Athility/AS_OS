@@ -1,127 +1,80 @@
-import { motion } from 'framer-motion';
-import { Play, Pause } from 'lucide-react';
-import { useState, useRef } from 'react';
+import { motion } from "framer-motion";
+import { Box, Gamepad2, Music2, PenLine } from "lucide-react";
+import AudioPlayer from "./AudioPlayer.jsx";
+import SectionLabel from "./SectionLabel.jsx";
 
 const interests = [
-  { name: 'PC Gaming', text: 'Immersed in digital worlds.' },
-  { name: 'Cubing', text: 'Solving puzzles with algorithms.' },
-  { name: 'Sketching', text: 'Capturing ideas on paper.' },
-  { name: 'Pop Culture Enthusiast', text: 'Analyzing narratives and media.' }
+  {
+    title: "PC Gaming",
+    copy: "Systems, reflex, atmosphere, and the satisfaction of mastering complex worlds.",
+    Icon: Gamepad2,
+  },
+  {
+    title: "Cubing",
+    copy: "Pattern recognition, speed, algorithmic thinking, and calm repetition under pressure.",
+    Icon: Box,
+  },
+  {
+    title: "Sketching",
+    copy: "Visual observation translated into quiet studies of form, proportion, and texture.",
+    Icon: PenLine,
+  },
+  {
+    title: "Pop Culture Enthusiast",
+    copy: "Films, music, games, internet culture, and the references that shape modern taste.",
+    Icon: Music2,
+  },
 ];
 
+const spring = { type: "spring", stiffness: 110, damping: 20, mass: 0.7 };
+
 export default function About() {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const audioRef = useRef(null);
-
-  const togglePlay = () => {
-    if (isPlaying) {
-      audioRef.current.pause();
-    } else {
-      audioRef.current.play();
-    }
-    setIsPlaying(!isPlaying);
-  };
-
-  const handleTimeUpdate = () => {
-    if (audioRef.current) {
-      const p = (audioRef.current.currentTime / audioRef.current.duration) * 100;
-      setProgress(p || 0);
-    }
-  };
-
   return (
-    <section id="about" className="py-32 px-8 max-w-6xl mx-auto border-t border-line mt-12">
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-      >
-        <p className="text-3xl md:text-5xl font-medium tracking-tight mb-24 text-muted leading-tight">
-          Driven by a profound passion for new technologies and continuous innovation.
-        </p>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
-          <div className="flex flex-col gap-12">
-            {interests.map((item, i) => (
-              <motion.div 
-                key={item.name} 
-                className="flex items-center gap-8"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ type: 'spring', delay: i * 0.1 }}
-              >
-                <div className="w-24 h-24 bg-surface border border-line rounded-md shrink-0 flex items-center justify-center overflow-hidden">
-                  <img 
-                    src={`/media/${item.name.toLowerCase().replace(/ /g, '-')}.jpg`} 
-                    alt={item.name} 
-                    className="w-full h-full object-cover opacity-60" 
-                    onError={(e) => { e.target.style.display = 'none'; }} 
-                  />
-                </div>
-                <div>
-                  <h4 className="text-xl font-semibold mb-2 text-primary tracking-tight">{item.name}</h4>
-                  <p className="text-muted text-sm">{item.text}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          <div className="flex items-start lg:justify-end">
-            <motion.div 
-              className="bg-surface border border-line p-8 rounded-md w-full max-w-md shadow-2xl"
-              whileHover={{ scale: 1.02 }}
-              transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+    <section
+      id="about"
+      className="mx-auto max-w-[1680px] px-5 py-28 sm:px-8 lg:px-12"
+    >
+      <SectionLabel index="02" label="About" kicker="Interests + Audio" />
+      <div className="grid gap-16 lg:grid-cols-[0.95fr_1.05fr]">
+        <div>
+          <motion.h2
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={spring}
+            className="max-w-4xl text-4xl font-semibold leading-tight text-crisp md:text-5xl lg:text-6xl"
+          >
+            Driven by a profound passion for new technologies and continuous
+            innovation.
+          </motion.h2>
+        </div>
+        <div className="space-y-4">
+          {interests.map(({ title, copy, Icon }, index) => (
+            <motion.article
+              key={title}
+              initial={{ opacity: 0, y: 22 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ ...spring, delay: index * 0.05 }}
+              className="flex flex-col gap-5 border-t border-divider py-5 sm:flex-row sm:items-center"
             >
-              <h4 className="text-xs tracking-widest text-muted uppercase mb-8 font-bold">// Now Playing</h4>
-              <div className="flex items-center gap-6">
-                <button 
-                  onClick={togglePlay} 
-                  className="w-14 h-14 rounded-full bg-primary text-base flex items-center justify-center shrink-0 hover:scale-105 transition-transform"
-                >
-                  {isPlaying ? <Pause size={20} className="fill-current" /> : <Play size={20} className="fill-current ml-1" />}
-                </button>
-                <div className="flex-grow">
-                  <p className="text-base font-semibold mb-1 text-primary">Don't Stop 'Til You Get Enough</p>
-                  <p className="text-sm text-muted mb-4">Michael Jackson</p>
-                  <div className="h-1 bg-line rounded-full overflow-hidden">
-                    <motion.div 
-                      className="h-full bg-primary"
-                      style={{ width: `${progress}%` }}
-                    />
-                  </div>
+              <div className="aspect-[16/10] w-full shrink-0 border border-divider bg-surface sm:w-52" />
+              <div className="flex-1">
+                <div className="mb-4 flex items-center gap-3">
+                  <Icon size={17} strokeWidth={1.7} className="text-crisp" />
+                  <h3 className="text-xl font-medium leading-none text-crisp">
+                    {title}
+                  </h3>
                 </div>
+                <p className="max-w-xl text-sm leading-6 text-muted">{copy}</p>
               </div>
-              
-              {/* Waveform Animation */}
-              <div className="mt-8 flex justify-center gap-1.5 h-6 overflow-hidden">
-                {[...Array(12)].map((_, i) => (
-                  <motion.div
-                    key={i}
-                    className="w-1 bg-primary rounded-full opacity-50"
-                    animate={{ 
-                      height: isPlaying ? ['20%', '100%', '20%'] : '20%' 
-                    }}
-                    transition={{ 
-                      repeat: Infinity, 
-                      duration: 0.6 + (Math.random() * 0.5), 
-                      delay: i * 0.05 
-                    }}
-                  />
-                ))}
-              </div>
-              
-              <audio 
-                ref={audioRef} 
-                src="/media/dont-stop.mp3" 
-                onTimeUpdate={handleTimeUpdate}
-                onEnded={() => setIsPlaying(false)}
-              />
-            </motion.div>
+            </motion.article>
+          ))}
+          <div className="pt-8">
+            <AudioPlayer />
           </div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

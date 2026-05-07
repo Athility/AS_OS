@@ -1,36 +1,24 @@
-import { useState } from 'react';
-import BootSequence from './components/BootSequence';
-import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
+import About from "./components/About.jsx";
+import BootSequence from "./components/BootSequence.jsx";
+import Contact from "./components/Contact.jsx";
+import Hero from "./components/Hero.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Projects from "./components/Projects.jsx";
 
-function App() {
-  const [booted, setBooted] = useState(false);
-
+export default function App() {
   return (
-    <div className="bg-base min-h-screen text-primary selection:bg-primary selection:text-base">
-      {!booted && <BootSequence onComplete={() => setBooted(true)} />}
-      
-      <div 
-        className={`${
-          booted ? 'opacity-100' : 'opacity-0 h-screen overflow-hidden'
-        } transition-opacity duration-1000 ease-in-out`}
-      >
-        <Navigation />
-        <main>
-          <Hero />
-          <About />
-          <Projects />
-          <Contact />
-        </main>
-        <footer className="py-12 text-center text-xs font-bold tracking-widest uppercase text-muted border-t border-line mt-20">
-          © {new Date().getFullYear()} Atharva Shinde. All rights reserved.
-        </footer>
-      </div>
+    <div className="min-h-screen bg-obsidian text-crisp">
+      <BootSequence />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+      <footer className="mx-auto max-w-[1680px] px-5 pb-10 text-xs uppercase text-muted sm:px-8 lg:px-12">
+        <div className="border-t border-divider pt-5">© AS_OS // Atharva Shinde</div>
+      </footer>
     </div>
   );
 }
-
-export default App;
