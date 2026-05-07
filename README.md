@@ -11,7 +11,7 @@
 
 **AS_OS** is a Personal Operating System — an ultra-premium, frameless, and grid-based interactive portfolio engineered for **Atharva Shinde** (an FY AI&DS Engineering Student at SAKEC). Inspired by high-end aesthetic modular terminals, the site features kinetic physics-based motion, a custom spring cursor, a retro CRT-styled power-on boot sequence, and a real-time responsive audio engine.
 
-[Live Demo](http://localhost:5173/) · [Core Features](#-core-features) · [Technology Stack](#-technology-stack) · [Getting Started](#-getting-started)
+[Live Demo](http://localhost:5173/) · [Core Features](#-core-features) · [Technology Stack](#-technology-stack)
 
 </div>
 
@@ -42,51 +42,19 @@ The interface is built around **grid-based glassmorphism** and a curated dark-mo
 
 ## 🛠️ Technology Stack
 
-Every technology and skill mapped on the site is represented with bespoke, custom icon mappings for high visual interest:
+Every technology and skill mapped on the site is represented inside a perfectly aligned monospace ASCII terminal grid with bespoke custom icons:
 
 ```
-┌──────────────────────────────────────────────────────────────────────────────┐
-│                                   AS_OS                                      │
-├─────────────────┬─────────────────┬─────────────────┬────────────────────────┤
+┌─────────────────┬─────────────────┬─────────────────┬────────────────────────┐
 │   PROGRAMMING   │    WEB BUILD    │     AI & ML     │       TOOLS / IDE      │
 ├─────────────────┼─────────────────┼─────────────────┼────────────────────────┤
 │ • Python (💻)   │ • HTML (Code)   │ • Pandas (📊)   │ • AutoCAD (🧭)         │
-│ • C/C++ (⚙️)     │ • CSS (Layers)  │ • NumPy (🏁)    │ • Blender (📦)         │
-│ • Java (☕)      │ • React (⚛️)     │ • Seaborn (📈)  │ • Canva (🎨)           │
-│                 │ • Node.js (🖥️)   │ • Scikit (🧠)   │ • VS Code (📝)         │
+│ • C/C++ (⚙️)    │ • CSS (Layers)  │ • NumPy (🏁)    │ • Blender (📦)         │
+│ • Java (☕)     │ • React (⚛️)    │ • Seaborn (📈)  │ • Canva (🎨)           │
+│                 │ • Node.js (🖥️)  │ • Scikit (🧠)   │ • VS Code (📝)         │
 │                 │ • Tailwind (💨) │ • Jupyter (📖)  │ • Antigravity (🪐)     │
 └─────────────────┴─────────────────┴─────────────────┴────────────────────────┘
 ```
-
----
-
-## 📦 Getting Started
-
-### Prerequisites
-- **Node.js** (v18.0.0 or higher)
-- **npm** (v9.0.0 or higher)
-
-### 1. Installation
-Clone the repository and install the project dependencies:
-```bash
-git clone https://github.com/Athility/AS_OS.git
-cd AS_OS
-npm install
-```
-
-### 2. Run Locally (Development)
-Spin up the hot-reloading development server:
-```bash
-npm run dev
-```
-The application will launch on **[http://localhost:5173/](http://localhost:5173/)**!
-
-### 3. Production Build
-Compile and bundle the optimized static client files:
-```bash
-npm run build
-```
-The output will be compiled directly inside the `dist/` directory, ready to deploy to any static host (such as Netlify, Vercel, or GitHub Pages).
 
 ---
 
