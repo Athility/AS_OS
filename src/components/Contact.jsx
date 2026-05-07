@@ -93,8 +93,8 @@ export default function Contact() {
               </p>
             </div>
             <a
-              href="/Atharva_Shinde_CV.txt"
-              download
+              href="/Atharva_Shinde_CV.pdf"
+              download="Atharva_Shinde_CV.pdf"
               className="inline-flex items-center justify-center gap-3 bg-crisp px-8 py-5 text-base font-bold tracking-wider uppercase text-obsidian transition-opacity duration-300 hover:opacity-70"
             >
               <Download size={19} strokeWidth={2} />
