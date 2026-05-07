@@ -44,11 +44,11 @@ The interface is built around **grid-based glassmorphism** and a curated dark-mo
 
 | PROGRAMMING | WEB BUILD | AI & ML | TOOLS / IDE |
 | :--- | :--- | :--- | :--- |
-| • Python (💻) | • HTML (Code) | • Pandas (📊) | • AutoCAD (🧭) |
-| • C/C++ (⚙️) | • CSS (Layers) | • NumPy (🏁) | • Blender (📦) |
-| • Java (☕) | • React (⚛️) | • Seaborn (📈) | • Canva (🎨) |
-| | • Node.js (🖥️) | • Scikit (🧠) | • VS Code (📝) |
-| | • Tailwind (💨) | • Jupyter (📖) | • Antigravity (🪐) |
+| <br> &nbsp;&nbsp;&nbsp;&nbsp; • Python (💻) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> | <br> &nbsp;&nbsp;&nbsp;&nbsp; • HTML (Code) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> | <br> &nbsp;&nbsp;&nbsp;&nbsp; • Pandas (📊) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> | <br> &nbsp;&nbsp;&nbsp;&nbsp; • AutoCAD (🧭) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> |
+| <br> &nbsp;&nbsp;&nbsp;&nbsp; • C/C++ (⚙️) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> | <br> &nbsp;&nbsp;&nbsp;&nbsp; • CSS (Layers) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> | <br> &nbsp;&nbsp;&nbsp;&nbsp; • NumPy (🏁) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> | <br> &nbsp;&nbsp;&nbsp;&nbsp; • Blender (📦) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> |
+| <br> &nbsp;&nbsp;&nbsp;&nbsp; • Java (☕) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> | <br> &nbsp;&nbsp;&nbsp;&nbsp; • React (⚛️) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> | <br> &nbsp;&nbsp;&nbsp;&nbsp; • Seaborn (📈) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> | <br> &nbsp;&nbsp;&nbsp;&nbsp; • Canva (🎨) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> |
+| | <br> &nbsp;&nbsp;&nbsp;&nbsp; • Node.js (🖥️) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> | <br> &nbsp;&nbsp;&nbsp;&nbsp; • Scikit (🧠) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> | <br> &nbsp;&nbsp;&nbsp;&nbsp; • VS Code (📝) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> |
+| | <br> &nbsp;&nbsp;&nbsp;&nbsp; • Tailwind (💨) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> | <br> &nbsp;&nbsp;&nbsp;&nbsp; • Jupyter (📖) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> | <br> &nbsp;&nbsp;&nbsp;&nbsp; • Antigravity (🪐) &nbsp;&nbsp;&nbsp;&nbsp; <br><br> |
 
 ---
 
