@@ -20,7 +20,7 @@ export default function Hero() {
             © Personal Operating System // SAKEC
           </p>
           <h1 className="font-display text-5xl font-semibold leading-[0.98] text-crisp sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
-            Welcome to AS_OS. I am Atharva Shinde, a FY AI&amp;DS Student at
+            Welcome to AS_OS. I am Atharva Shinde, an FY AI&amp;DS Student at
             SAKEC.
           </h1>
         </div>
