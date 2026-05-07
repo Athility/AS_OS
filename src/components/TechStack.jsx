@@ -34,20 +34,20 @@ export default function TechStack() {
               className="min-h-[280px] border border-divider bg-surface p-5 shadow-matte"
             >
               <div className="mb-12 flex items-center justify-between gap-4">
-                <h2 className="text-sm font-medium uppercase leading-none text-crisp">
+                <h2 className="text-base font-bold tracking-wider uppercase leading-none text-crisp">
                   {category}
                 </h2>
-                <span className="text-xs text-muted">
+                <span className="text-sm font-medium text-muted">
                   {String(items.length).padStart(2, "0")}
                 </span>
               </div>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {items.map((item) => (
                   <li
                     key={item}
-                    className="flex items-center gap-3 border-t border-divider/80 pt-3 text-sm text-muted"
+                    className="flex items-center gap-3 border-t border-divider/80 pt-3 text-[15px] font-medium text-muted transition-colors duration-300 hover:text-crisp"
                   >
-                    <Icon size={16} strokeWidth={1.7} className="text-crisp" />
+                    <Icon size={18} strokeWidth={1.8} className="text-crisp" />
                     <span>{item}</span>
                   </li>
                 ))}

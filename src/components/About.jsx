@@ -56,17 +56,18 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ ...spring, delay: index * 0.05 }}
-              className="flex flex-col gap-5 border-t border-divider py-5 sm:flex-row sm:items-center"
+              className="flex flex-col gap-6 border-t border-divider py-5 sm:flex-row sm:items-center"
             >
-              <div className="aspect-[16/10] w-full shrink-0 border border-divider bg-surface sm:w-52" />
+              {/* Increased picture holder width to sm:w-72 */}
+              <div className="aspect-[16/10] w-full shrink-0 border border-divider bg-surface sm:w-72" />
               <div className="flex-1">
                 <div className="mb-4 flex items-center gap-3">
-                  <Icon size={17} strokeWidth={1.7} className="text-crisp" />
-                  <h3 className="text-xl font-medium leading-none text-crisp">
+                  <Icon size={19} strokeWidth={1.8} className="text-crisp" />
+                  <h3 className="text-xl font-semibold leading-none text-crisp">
                     {title}
                   </h3>
                 </div>
-                <p className="max-w-xl text-sm leading-6 text-muted">{copy}</p>
+                <p className="max-w-xl text-[15px] leading-7 text-muted">{copy}</p>
               </div>
             </motion.article>
           ))}

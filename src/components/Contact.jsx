@@ -20,7 +20,7 @@ export default function Contact() {
           transition={spring}
           className="border border-divider bg-surface p-6 md:p-8"
         >
-          <p className="mb-8 text-xs uppercase leading-none text-muted">
+          <p className="mb-8 text-sm font-semibold tracking-wider uppercase leading-none text-muted">
             // EMAIL
           </p>
           <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
@@ -28,16 +28,16 @@ export default function Contact() {
               <h2 className="mb-4 text-4xl font-semibold leading-none text-crisp md:text-6xl">
                 Say Hello
               </h2>
-              <p className="max-w-2xl text-base leading-7 text-muted">
+              <p className="max-w-2xl text-lg leading-8 text-muted">
                 Have a project in mind, a question, or just want to chat? Drop
                 me a message.
               </p>
             </div>
             <a
               href="mailto:KRASHITOS96420@GMAIL.COM"
-              className="inline-flex items-center gap-3 text-sm uppercase text-crisp transition-opacity duration-300 hover:opacity-70"
+              className="inline-flex items-center gap-3 text-base font-bold tracking-wide uppercase text-crisp transition-opacity duration-300 hover:opacity-70"
             >
-              <Mail size={17} strokeWidth={1.7} />
+              <Mail size={19} strokeWidth={2} />
               KRASHITOS96420@GMAIL.COM
             </a>
           </div>
@@ -50,7 +50,7 @@ export default function Contact() {
           transition={{ ...spring, delay: 0.05 }}
           className="border border-divider bg-surface p-6 md:p-8"
         >
-          <p className="mb-8 text-xs uppercase leading-none text-muted">
+          <p className="mb-8 text-sm font-semibold tracking-wider uppercase leading-none text-muted">
             // SOCIALS
           </p>
           <h2 className="mb-6 text-4xl font-semibold leading-none text-crisp md:text-6xl">
@@ -63,11 +63,11 @@ export default function Contact() {
                 href={social.link}
                 target="_blank"
                 rel="noreferrer"
-                className="grid gap-2 border border-divider bg-obsidian px-4 py-4 text-sm transition-opacity duration-300 hover:opacity-70 sm:grid-cols-[1fr_1fr_auto] sm:items-center"
+                className="grid gap-2 border border-divider bg-obsidian px-5 py-5 transition-opacity duration-300 hover:opacity-70 sm:grid-cols-[1fr_1fr_auto] sm:items-center"
               >
-                <span className="font-medium text-crisp">{social.platform}</span>
-                <span className="text-muted">{social.handle}</span>
-                <span className="text-right text-crisp">→</span>
+                <span className="text-base font-bold tracking-wide text-crisp">{social.platform}</span>
+                <span className="text-base font-medium text-muted">{social.handle}</span>
+                <span className="text-right text-base font-bold text-crisp">→</span>
               </a>
             ))}
           </div>
@@ -80,7 +80,7 @@ export default function Contact() {
           transition={{ ...spring, delay: 0.1 }}
           className="border border-divider bg-surface p-6 md:p-8"
         >
-          <p className="mb-8 text-xs uppercase leading-none text-muted">
+          <p className="mb-8 text-sm font-semibold tracking-wider uppercase leading-none text-muted">
             // RESUME
           </p>
           <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
@@ -88,16 +88,16 @@ export default function Contact() {
               <h2 className="mb-4 text-4xl font-semibold leading-none text-crisp md:text-6xl">
                 Download My CV
               </h2>
-              <p className="max-w-2xl text-base leading-7 text-muted">
+              <p className="max-w-2xl text-lg leading-8 text-muted">
                 Get a detailed overview of my skills, experience, and projects.
               </p>
             </div>
             <a
               href="/Atharva_Shinde_CV.txt"
               download
-              className="inline-flex items-center justify-center gap-3 bg-crisp px-6 py-4 text-sm font-semibold uppercase text-obsidian transition-opacity duration-300 hover:opacity-70"
+              className="inline-flex items-center justify-center gap-3 bg-crisp px-8 py-5 text-base font-bold tracking-wider uppercase text-obsidian transition-opacity duration-300 hover:opacity-70"
             >
-              <Download size={17} strokeWidth={2} />
+              <Download size={19} strokeWidth={2} />
               DOWNLOAD CV
             </a>
           </div>
