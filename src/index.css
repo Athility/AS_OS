@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #050505;
+  --color-surface: #121212;
+  --color-line: #333333;
+  --color-primary: #fafafa;
+  --color-muted: #888888;
+  --font-sans: "Inter", "Geist", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-base);
+    color: var(--color-primary);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-base);
+}
