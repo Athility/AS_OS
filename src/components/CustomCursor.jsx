@@ -50,7 +50,7 @@ export default function CustomCursor() {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        scale: isHovered ? 1.5 : 0.4,
+        scale: isHovered ? 1.8 : 0.6,
         backgroundColor: isHovered ? 'transparent' : '#fafafa',
         borderWidth: isHovered ? '1px' : '0px'
       }}

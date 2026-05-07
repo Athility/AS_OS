@@ -1,7 +1,7 @@
 export const socials = [
   {
     platform: "LinkedIn",
-    handle: "atharva-shinde-b12b3b2a0",
+    handle: "Atharva Shinde IN",
     link: "https://www.linkedin.com/in/atharva-shinde-b12b3b2a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {

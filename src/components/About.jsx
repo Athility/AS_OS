@@ -8,21 +8,25 @@ const interests = [
     title: "PC Gaming",
     copy: "Systems, reflex, atmosphere, and the satisfaction of mastering complex worlds.",
     Icon: Gamepad2,
+    image: "/media/gaming.jpg",
   },
   {
     title: "Cubing",
     copy: "Pattern recognition, speed, algorithmic thinking, and calm repetition under pressure.",
     Icon: Box,
+    image: "/media/cubing.jpg",
   },
   {
     title: "Sketching",
     copy: "Visual observation translated into quiet studies of form, proportion, and texture.",
     Icon: PenLine,
+    image: "/media/sketching.jpg",
   },
   {
     title: "Pop Culture Enthusiast",
     copy: "Films, music, games, internet culture, and the references that shape modern taste.",
     Icon: Music2,
+    image: "/media/popculture.jpg",
   },
 ];
 
@@ -49,7 +53,7 @@ export default function About() {
           </motion.h2>
         </div>
         <div className="space-y-4">
-          {interests.map(({ title, copy, Icon }, index) => (
+          {interests.map(({ title, copy, Icon, image }, index) => (
             <motion.article
               key={title}
               initial={{ opacity: 0, y: 22 }}
@@ -58,8 +62,14 @@ export default function About() {
               transition={{ ...spring, delay: index * 0.05 }}
               className="flex flex-col gap-6 border-t border-divider py-5 sm:flex-row sm:items-center"
             >
-              {/* Increased picture holder width to sm:w-72 */}
-              <div className="aspect-[16/10] w-full shrink-0 border border-divider bg-surface sm:w-72" />
+              {/* Image holder with interactive cover image */}
+              <div className="aspect-[16/10] w-full shrink-0 overflow-hidden border border-divider bg-surface sm:w-72">
+                <img
+                  src={image}
+                  alt={title}
+                  className="h-full w-full object-cover grayscale brightness-[0.8] transition-all duration-700 ease-out hover:scale-105 hover:grayscale-0 hover:brightness-100"
+                />
+              </div>
               <div className="flex-1">
                 <div className="mb-4 flex items-center gap-3">
                   <Icon size={19} strokeWidth={1.8} className="text-crisp" />
