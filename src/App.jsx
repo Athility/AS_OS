@@ -3,10 +3,12 @@ import Lenis from "lenis";
 import About from "./components/About.jsx";
 import BootSequence from "./components/BootSequence.jsx";
 import Contact from "./components/Contact.jsx";
+import Credentials from "./components/Credentials.jsx";
 import Hero from "./components/Hero.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Projects from "./components/Projects.jsx";
 import CustomCursor from "./components/CustomCursor.jsx";
+
 
 export default function App() {
   useEffect(() => {
@@ -43,6 +45,7 @@ export default function App() {
         <Hero />
         <About />
         <Projects />
+        <Credentials />
         <Contact />
       </main>
       <footer className="mx-auto max-w-[1680px] px-5 pb-10 text-xs uppercase text-muted sm:px-8 lg:px-12">
